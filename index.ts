@@ -1469,5 +1469,33 @@ console.clear();
 
   // // person.name = "s"
   // console.log(person);
-  // Next > TS Key of
+
+  // interface Person {
+  //   name: string;
+  //   age: number;
+  // }
+
+  // function printPersonPerty(person: Person, property: keyof Person) {
+  //   console.log(`Printin person property ${person[property]}`);
+  // }
+
+  // let person = {
+  //   name: "Max",
+  //   age: 27,
+  // };
+
+  // printPersonPerty(person, "name");
+  // printPersonPerty(person, "age");
+
+  // type StringMap = { [key: string]: unknown };
+
+  // function createStringPair(
+  //   property: keyof StringMap,
+  //   value: string
+  // ): StringMap {
+  //   return { [property]: value };
+  // }
+
+  // console.log(createStringPair("hello", "adiox"));
+  // Next > TS Null
 }
