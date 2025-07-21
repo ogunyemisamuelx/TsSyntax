@@ -1394,108 +1394,120 @@ console.clear();
   //   //(D) Syntax error
   //   //like comment and follow ➕ for more
   // }
-
   // interface Car {
   //   make:string;
   //   model:string;
   //   mileage?:number
   // }
-
   // let myCar: Required<Car> = {
   //   make: 'Ford',
   //   model:"Focus",
   //   mileage: 12000
   // }
-
   // console.log(myCar)
-
   // const nameAgeMap: Record<string, number> = {
   //   Alice: 21,
   //   Bob: 25,
   // };
-
   // console.log(nameAgeMap);
-
-  interface Person {
-    name: string;
-    age: number;
-    location?: string;
-  }
-
-  // const bob: Omit<Person, "age" | "location"> = {
-  //   name: "bob",
-  // };
-  // console.log(bob);
-
   // interface Person {
   //   name: string;
   //   age: number;
   //   location?: string;
   // }
-
+  // const bob: Omit<Person, "age" | "location"> = {
+  //   name: "bob",
+  // };
+  // console.log(bob);
+  // interface Person {
+  //   name: string;
+  //   age: number;
+  //   location?: string;
+  // }
   // const bob: Pick<Person, "name"> = {
   //   name: "Bob",
   // };
   // console.log(bob);
-
   // type Primitive = string | number | boolean
   // const value: Exclude<Primitive, string> = true
   // console.log(value)
-
   // type PointGenerator = () => { x: number; y: number };
-
   // const point: ReturnType<PointGenerator> = {
   //   x: 10,
   //   y: 20,
   // };
   // console.log(point);
-
   // type PointPrinter = (p: {x:number; y:number}) => void;
   // const point: Parameters<PointPrinter>[0] = {
   //   x:10,
   //   y:20
   // }
   // console.log(point)
-
   // interface Person {
   //   name: string;
   //   age: number;
   // }
-
   // const person: Readonly<Person> = {
   //   name: "D",
   //   age: 34,
   // };
-
   // // person.name = "s"
   // console.log(person);
-
   // interface Person {
   //   name: string;
   //   age: number;
   // }
-
   // function printPersonPerty(person: Person, property: keyof Person) {
   //   console.log(`Printin person property ${person[property]}`);
   // }
-
   // let person = {
   //   name: "Max",
   //   age: 27,
   // };
-
   // printPersonPerty(person, "name");
   // printPersonPerty(person, "age");
-
   // type StringMap = { [key: string]: unknown };
-
   // function createStringPair(
   //   property: keyof StringMap,
   //   value: string
   // ): StringMap {
   //   return { [property]: value };
   // }
-
   // console.log(createStringPair("hello", "adiox"));
+  // let value: string | undefined | null = null;
+  // value = "hello";
+  // value = undefined;
+  // console.log(value);
+  // interface House {
+  //   sqft: number;
+  //   yard?: {
+  //     sqft: number;
+  //   };
+  // }
+  // function printYrdSize(house: House) {
+  //   const yardSize = house.yard?.sqft;
+  //   if (yardSize === undefined) {
+  //     console.log("No yard");
+  //   } else {
+  //     console.log(`Yard is ${yardSize} sqft`);
+  //   }
+  // }
+  // let home: House = {
+  //   sqft: 500,
+  // };
+  // printYrdSize(home);
+  // function printMilleage(mileage: number | null | undefined) {
+  //   console.log(`Mileage: ${mileage ?? "Not Available"}`);
+  // }
+  // printMilleage(null);
+  // printMilleage(0);
+  // function getValue(): string | undefined {
+  //   return "hellos";
+  // }
+  // let value = getValue();
+  // console.log("value length:" + value?.length);
+  // let arrat: number[] = [1, 2, 3];
+  // let value = arrat[0];
+  // console.log(value);
   // Next > TS Null
 }
