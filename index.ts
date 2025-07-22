@@ -1509,5 +1509,10 @@ console.clear();
   // let arrat: number[] = [1, 2, 3];
   // let value = arrat[0];
   // console.log(value);
-  // Next > TS Null
+  // Next > TS Definitely Typed
+}
+
+{
+  let x: number = 23;
+  console.log(x);
 }
