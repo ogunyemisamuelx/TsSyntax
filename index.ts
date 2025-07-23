@@ -1509,10 +1509,16 @@ console.clear();
   // let arrat: number[] = [1, 2, 3];
   // let value = arrat[0];
   // console.log(value);
-  // Next > TS Definitely Typed
-}
-
-{
-  let x: number = 23;
-  console.log(x);
+  // {
+  //   let x: number = 23;
+  //   console.log(x);
+  // }
+  // type Color = "red" | "green" | "blue";
+  // type HexColor<T extends Color> = `#${string}`;
+  // let myColor: HexColor<"blue"> = "#0000FF";
+  // console.log(myColor);
+  // type DynamicObject = { [key: string as `dynamic_${string}`]: string };
+  // type DynamicObject = { [key: any as `dynamic_${any}`]: any };
+  // let obj: DynamicObject = { dynamic_key: "value" };
+  // Next > TS 5 Updates
 }
