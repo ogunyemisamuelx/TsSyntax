@@ -1520,5 +1520,6 @@ console.clear();
   // type DynamicObject = { [key: string as `dynamic_${string}`]: string };
   // type DynamicObject = { [key: any as `dynamic_${any}`]: any };
   // let obj: DynamicObject = { dynamic_key: "value" };
-  // Next > TS 5 Updates
+  let x:string = "hello"
+  // Next > TS Home
 }
