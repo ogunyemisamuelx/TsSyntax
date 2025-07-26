@@ -1520,8 +1520,22 @@ console.clear();
   // type DynamicObject = { [key: string as `dynamic_${string}`]: string };
   // type DynamicObject = { [key: any as `dynamic_${any}`]: any };
   // let obj: DynamicObject = { dynamic_key: "value" };
-  let x: string = "hello";
+  // let x: string = "hello";
 
-  let __typescriptAllowsDeveloperstoAdd = "Types";
-  // Next > TS Home
+  // let __typescriptAllowsDeveloperstoAdd = "Types";
+
+  // let x:[string,number,null]
+  // let u = ["hey",2,null]
+
+  type car = {
+    type: string;
+    model: string;
+  };
+
+  const Car: car = {
+    type: "newcar",
+    model: "xu3",
+  };
+  console.log(Car);
+  // Next >TS Home
 }
