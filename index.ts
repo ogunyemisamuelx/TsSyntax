@@ -1537,5 +1537,8 @@ console.clear();
     model: "xu3",
   };
   console.log(Car);
+
+  let whatTypesAllows = `Typescript allows developers to add types/Types.`;
+  console.log(whatTypesAllows);
   // Next >TS Home
 }
