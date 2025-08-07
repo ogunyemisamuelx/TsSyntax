@@ -1540,5 +1540,8 @@ console.clear();
 
   let whatTypesAllows = `Typescript allows developers to add types/Types.`;
   console.log(whatTypesAllows);
+
+  let whereDoesTsRuns = `when javascript is been converted to typescript mean sit runs anywhere javascript runs `;
+  console.log(whereDoesTsRuns);
   // Next >TS Home
 }
